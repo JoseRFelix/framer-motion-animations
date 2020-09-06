@@ -3,10 +3,10 @@ import React from "react";
 import FadeIn from "./components/fade-in-down";
 
 export default {
-  title: "Fade In Down Card",
+  title: "Simple/Fade in down card",
   component: FadeIn,
 };
 
 const Template = (args) => <FadeIn {...args} />;
 
-export const FadeInDown = Template.bind({});
+export const main = Template.bind({});

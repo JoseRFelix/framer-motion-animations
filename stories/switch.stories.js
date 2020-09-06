@@ -3,10 +3,10 @@ import React from "react";
 import SwitchComponent from "./components/switch";
 
 export default {
-  title: "Switch",
+  title: "Layout/Switch",
   component: SwitchComponent,
 };
 
 const Template = (args) => <SwitchComponent {...args} />;
 
-export const Switch = Template.bind({});
+export const Main = Template.bind({});
