@@ -1,12 +1,26 @@
 import React from "react";
 
-import DragBlockComponent from "./components/drag-block";
+import { motion } from "framer-motion";
 
 export default {
   title: "Drag/Block",
-  component: DragBlockComponent,
 };
 
-const Template = (args) => <DragBlockComponent {...args} />;
+const Template = () => {
+  return (
+    <motion.div
+      drag
+      dragConstraints={{
+        top: -50,
+        left: -50,
+        right: 50,
+        bottom: 50,
+      }}
+      className="px-12 py-6 bg-white rounded-lg"
+    >
+      Hello World!
+    </motion.div>
+  );
+};
 
 export const Main = Template.bind({});
