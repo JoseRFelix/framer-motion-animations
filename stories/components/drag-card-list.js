@@ -27,7 +27,7 @@ function useWindowSize() {
 
 const STORYBOOK_PADDING = 16;
 
-const Drag = () => {
+const DragCardList = () => {
   const windowDimensions = useWindowSize();
   const trackRef = React.useRef();
   const [trackWidth, setTrackWidth] = React.useState();
@@ -64,4 +64,4 @@ const Card = () => (
   <div className="px-12 py-6 bg-white rounded-lg">Hello World!</div>
 );
 
-export default Drag;
+export default DragCardList;
